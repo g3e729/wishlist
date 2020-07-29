@@ -1,0 +1,37 @@
+Wishlist 
+	
+	project: Create a simple Wishlist application where people can create their own wishlist and share this with their friends. Their friends will be able to choose a specific wishlist item that they will buy.
+
+	• Simple Login/Register without account activation
+	• CRUD Wishlist (for organizers)
+		- Name of wishlist
+		- Organizer
+		- Shareable link
+		
+	• CRUD Wishlist items (for organizer)
+		- Name
+		- Description (optional)
+		- Price (price)
+		- Image (optional)
+			> Organizer should be able to upload an image from his computer
+			> Organizer should also be able to choose one of the 4 recommended pictures / gifs (the recommended pictures should be fetched from the Imgur API, use the name of the wishlist item as your query parameter)
+		- Url (optional)
+			> The url can be used to show where you can buy the item
+
+	• Share wishlist with others
+		- Other people can log in/register and select a wishlist item that they will buy. (They can only select items that haven’t been bought yet by other invitees)
+			> Send e-mail to invitee to confirm he/she has chosen the specific product (use external mail server like mailjet, sendgrid …)
+
+	• The organizer of a wishlist won’t be able to see that someone is buying a specific item of his list. Logged in invitees of the wishlist will be able to see what yet has been bought and what isn’t. 
+
+
+Requirements:
+ - Use latest version of Laravel 
+ - You can use very simple front-end with bootstrap for example (front-end skills won’t be scored)
+ - Create database based on project specifications (please include ERD of your database)
+ - Seed database with users, wishlists and wishlistitems
+ - Create a factory for a wishlistitem (you can always assign it to one static wishlist)
+ - Create a feature test to check if all pages return 200 http status code
+ - Write a unit test to insert a wishlistitem in the wishlistitems table (use your factory)
+ - Validate the input of a user (you can choose the necessary validation rules)
+ - Use Laravel pagination for the wishlist items

@@ -1,0 +1,1 @@
+<div style="width: 100%; background-image: url('{{ asset('wishlist.svg') }}'); height: 100%; background-repeat: no-repeat;"></div>
